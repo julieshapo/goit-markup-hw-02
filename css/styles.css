@@ -1,4 +1,129 @@
+:root {
+  --header-bg: #ffffff;
+  --header-frame: #ececec;
+  --logo-black: #000000;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  /* --primary-bg: #f5f5f5; */
+  --secondary-bg: #f5f4fa;
+  --container-bg: #eeeeee;
+  --footer-bg: #2f303a;
+  --text-footer-color: rgba(255, 255, 255, 0.6);
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--header-bg);
+}
+
+.header {
+  background-color: var(--header-bg);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--accent-color);
+}
+
+.logo-black {
+  color: var(--logo-black);
+}
+
+.logo-white {
+  color: var(--header-bg);
+}
+
+.site-nav .link {
+  color: var(--secondary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .current {
+  color: var(--accent-color);
+}
+
+.contacts .contact-item {
+  color: var(--primary-text-color);
+}
+
+.contacts .contact-item:hover,
+.contacts .contact-item:focus {
+  color: var(--accent-color);
+}
+
+.hero {
+  background-color: var(--footer-bg);
+}
+
+.hero .title {
+  color: var(--header-bg);
+}
+
+.button {
+  border-color: transparent;
+}
+
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--header-bg);
+}
+
+.button.secondary {
+  background-color: var(--secondary-bg);
+  color: var(--secondary-text-color);
+}
+
+.button.secondary:hover {
+  background-color: var(--accent-color);
+  color: var(--header-bg);
+}
+
+.section {
+  background-color: var(--header-bg);
+}
+
+.section-title {
+  color: var(--secondary-text-color);
+}
+
+.section .title {
+  color: var(--secondary-text-color);
+}
+
+.section.team {
+  background-color: var(--secondary-bg);
+}
+
+.team-item {
+  background-color: var(--header-bg);
+}
+
+.name {
+  color: var(--secondary-text-color);
+}
+
+.footer {
+  background-color: var(--footer-bg);
+}
+
+.img {
+  background-color: var(--container-bg);
+}
+
+.work-title {
+  color: var(--secondary-text-color);
 }

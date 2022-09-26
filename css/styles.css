@@ -188,10 +188,6 @@ body {
 
 /* секція Портфоліо */
 
-.img {
-  background-color: var(--container-bg);
-}
-
 .work-title {
   color: var(--secondary-text-color);
   font-weight: 700;

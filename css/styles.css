@@ -90,7 +90,7 @@ body {
   background-color: var(--footer-bg);
 }
 
-.hero .title {
+.hero-title {
   color: var(--header-bg);
   font-weight: 900;
   font-size: 44px;

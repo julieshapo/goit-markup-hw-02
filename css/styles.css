@@ -5,7 +5,7 @@
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
-  /* --primary-bg: #f5f5f5; */
+  /* --figma-bg: #f5f5f5; */
   --secondary-bg: #f5f4fa;
   --container-bg: #eeeeee;
   --footer-bg: #2f303a;
@@ -13,16 +13,14 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--header-bg);
   color: var(--primary-text-color);
-  background-color: var(--header-bg);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
-.header {
-  background-color: var(--header-bg);
-}
-
+/* класи утиліти */
 .list {
   list-style: none;
 }
@@ -31,8 +29,20 @@ body {
   text-decoration: none;
 }
 
+/* хедер */
+.header {
+  background-color: var(--header-bg);
+}
+
+/* логотип */
+
 .logo {
+  font-family: Raleway, sans-serif;
   color: var(--accent-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo-black {
@@ -41,6 +51,14 @@ body {
 
 .logo-white {
   color: var(--header-bg);
+}
+
+/* навігація і контакти */
+
+.header li {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link {
@@ -65,44 +83,83 @@ body {
   color: var(--accent-color);
 }
 
+/* секція hero */
+
 .hero {
   background-color: var(--footer-bg);
 }
 
 .hero .title {
   color: var(--header-bg);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
+
+/* кнопки на обох сторінках */
 
 .button {
   border-color: transparent;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .button.primary {
   background-color: var(--accent-color);
   color: var(--header-bg);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .button.secondary {
   background-color: var(--secondary-bg);
   color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.button.secondary:hover {
+.button.secondary:hover,
+.button.secondary:focus {
   background-color: var(--accent-color);
   color: var(--header-bg);
 }
 
+/* секції Наші переваги і Чим ми займаємося */
 .section {
   background-color: var(--header-bg);
 }
 
 .section-title {
   color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.6;
+  text-align: center;
 }
 
-.section .title {
+.features-item {
   color: var(--secondary-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
+
+.features-text {
+  line-height: 1.71;
+}
+
+/* секція Команда */
 
 .section.team {
   background-color: var(--secondary-bg);
@@ -114,11 +171,21 @@ body {
 
 .name {
   color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
 }
 
-.footer {
-  background-color: var(--footer-bg);
+.team-item .title {
+  font-size: 16px;
+  line-height: 1.18;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
 }
+
+/* секція Портфоліо */
 
 .img {
   background-color: var(--container-bg);
@@ -126,4 +193,32 @@ body {
 
 .work-title {
   color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.work-description {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* футер */
+
+.footer {
+  background-color: var(--footer-bg);
+}
+
+.address-item {
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.address-item .primary {
+  color: var(--header-bg);
+}
+
+.address-item .secondary {
+  color: var(--text-footer-color);
 }

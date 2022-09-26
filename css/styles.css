@@ -15,6 +15,7 @@
 body {
   background-color: var(--header-bg);
   color: var(--primary-text-color);
+
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -110,6 +111,7 @@ body {
 .button.primary {
   background-color: var(--accent-color);
   color: var(--header-bg);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -122,6 +124,7 @@ body {
 .button.secondary {
   background-color: var(--secondary-bg);
   color: var(--secondary-text-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;

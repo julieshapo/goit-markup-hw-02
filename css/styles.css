@@ -30,6 +30,20 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* хедер */
 .header {
   background-color: var(--header-bg);
@@ -43,7 +57,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .logo-black {
@@ -56,14 +69,14 @@ body {
 
 /* навігація і контакти */
 
-.header li {
+.site-nav .link {
+  color: var(--secondary-text-color);
+}
+
+.nav-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.site-nav .link {
-  color: var(--secondary-text-color);
 }
 
 .site-nav .link:hover,
@@ -75,12 +88,15 @@ body {
   color: var(--accent-color);
 }
 
-.contacts .contact-item {
+.contacts .contact-link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-.contacts .contact-item:hover,
-.contacts .contact-item:focus {
+.contacts .contact-link:hover,
+.contacts .contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -139,21 +155,21 @@ body {
 }
 
 /* секції Наші переваги і Чим ми займаємося */
+
 .section {
   background-color: var(--header-bg);
 }
 
 .section-title {
   color: var(--secondary-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.6;
   text-align: center;
 }
 
-.features-item {
+.features-title {
   color: var(--secondary-text-color);
-  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -172,7 +188,7 @@ body {
   background-color: var(--header-bg);
 }
 
-.name {
+.team-name {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -180,7 +196,7 @@ body {
   /* text-align: center; */
 }
 
-.team-item .title {
+.team-title {
   font-size: 16px;
   line-height: 1.18;
   /* text-align: center; */
@@ -188,15 +204,14 @@ body {
 
 /* секція Портфоліо */
 
-.work-title {
+.project-title {
   color: var(--secondary-text-color);
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.work-description {
+.project-type {
   font-size: 16px;
   line-height: 1.8;
   color: var(--primary-text-color);
@@ -208,15 +223,20 @@ body {
   background-color: var(--footer-bg);
 }
 
-.address-item {
+.address-link {
   font-style: normal;
   line-height: 1.71;
 }
 
-.address-item .primary {
+.address-link.primary {
   color: var(--header-bg);
 }
 
-.address-item .secondary {
+.address-link.secondary {
   color: var(--text-footer-color);
+}
+
+.address-link.secondary:hover,
+.address-link.secondary:hover {
+  color: var(--accent-color);
 }
